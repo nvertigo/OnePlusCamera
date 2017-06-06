@@ -2005,7 +2005,6 @@
     invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_3
     .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_2
-    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_1
 
     move v2, v0
 

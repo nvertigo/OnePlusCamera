@@ -690,7 +690,6 @@
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     move-result v0
 

@@ -157,8 +157,6 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 110
@@ -196,8 +194,6 @@
     :try_end_2
     .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/lang/ClassCastException; {:try_start_2 .. :try_end_2} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_2 .. :try_end_2} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
     :catch_0
@@ -222,8 +218,6 @@
     invoke-interface {p1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
     :try_end_3
     .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_3 .. :try_end_3} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/ClassCastException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 

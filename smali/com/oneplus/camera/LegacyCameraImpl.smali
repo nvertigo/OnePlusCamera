@@ -4720,8 +4720,6 @@
     invoke-static {v5, v6}, Lcom/oneplus/base/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1313
-    invoke-direct {p0, v10}, Lcom/oneplus/camera/LegacyCameraImpl;->applyOneplusCallback(Z)Z
-
     .line 1316
     :goto_3
     invoke-direct {p0}, Lcom/oneplus/camera/LegacyCameraImpl;->takePicture()Z
@@ -4786,8 +4784,6 @@
     invoke-direct {p0}, Lcom/oneplus/camera/LegacyCameraImpl;->applyDngImageCallbackBuffer()Z
 
     .line 1305
-    invoke-direct {p0, v11}, Lcom/oneplus/camera/LegacyCameraImpl;->applyOneplusCallback(Z)Z
-
     .line 1308
     sget-object v5, Lcom/oneplus/camera/LegacyCameraImpl;->PROP_IS_CAPTURING_RAW_PHOTO:Lcom/oneplus/base/PropertyKey;
 
@@ -14528,8 +14524,6 @@
     invoke-virtual {v5, v8}, Landroid/hardware/Camera;->setFaceDetectionListener(Landroid/hardware/Camera$FaceDetectionListener;)V
 
     .line 3897
-    invoke-direct {p0}, Lcom/oneplus/camera/LegacyCameraImpl;->applyAeCallback()Z
-
     .line 3900
     iget-boolean v5, p0, Lcom/oneplus/camera/LegacyCameraImpl;->m_IsFaceDetectionEnabled:Z
 
@@ -16255,11 +16249,7 @@
 
     .line 2681
     :cond_0
-    invoke-direct {p0, v3}, Lcom/oneplus/camera/LegacyCameraImpl;->applyProcessCallback(Z)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
     .line 2682
     iput-boolean v3, p0, Lcom/oneplus/camera/LegacyCameraImpl;->m_IsProcessCallbackSupported:Z

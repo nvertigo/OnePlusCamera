@@ -151,7 +151,6 @@
     invoke-virtual {v2}, Lcom/amap/api/location/b$a$1;->start()V
     :try_end_2
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
 
     goto :goto_0
 
