@@ -90,7 +90,6 @@
     invoke-static {v0, v1}, Lcom/aps/ak;->a(Lcom/aps/ak;Landroid/location/GpsStatus$NmeaListener;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     :goto_0
     :try_start_2

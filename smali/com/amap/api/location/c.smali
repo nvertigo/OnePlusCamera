@@ -351,7 +351,6 @@
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 119
     :goto_2
@@ -1020,7 +1019,7 @@
     :try_start_1
     invoke-virtual {p0}, Lcom/amap/api/location/c;->a()Z
     :try_end_1
-    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_5
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
 
     move-result v0
 
@@ -1099,7 +1098,7 @@
     .line 179
     invoke-direct {p0}, Lcom/amap/api/location/c;->e()Lcom/aps/c;
     :try_end_4
-    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_3
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_1
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     move-result-object v0
@@ -1138,12 +1137,10 @@
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
     :try_end_6
     .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_1
 
     goto :goto_0
 
     .line 209
-    :catch_1
     move-exception v0
 
     goto :goto_1
@@ -1153,7 +1150,7 @@
     :try_start_7
     invoke-direct {p0}, Lcom/amap/api/location/c;->g()Z
     :try_end_7
-    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_3
+    .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_1
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     move-result v0
@@ -1172,7 +1169,6 @@
 
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
     :try_end_8
-    .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_6
     .catch Ljava/lang/Throwable; {:try_start_8 .. :try_end_8} :catch_3
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
@@ -1199,12 +1195,10 @@
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
     :try_end_a
     .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_2
 
     goto :goto_0
 
     .line 209
-    :catch_2
     move-exception v0
 
     goto :goto_1
@@ -1214,7 +1208,7 @@
     :try_start_b
     invoke-direct {p0, v0}, Lcom/amap/api/location/c;->a(Lcom/aps/c;)Lcom/amap/api/location/AMapLocation;
     :try_end_b
-    .catch Ljava/lang/Throwable; {:try_start_b .. :try_end_b} :catch_3
+    .catch Ljava/lang/Throwable; {:try_start_b .. :try_end_b} :catch_1
     .catchall {:try_start_b .. :try_end_b} :catchall_0
 
     move-result-object v0
@@ -1222,7 +1216,7 @@
     goto :goto_3
 
     .line 210
-    :catch_3
+    :catch_1
     move-exception v0
 
     .line 188
@@ -1254,12 +1248,10 @@
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
     :try_end_e
     .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_4
 
     goto/16 :goto_0
 
     .line 209
-    :catch_4
     move-exception v0
 
     goto/16 :goto_1
@@ -1270,28 +1262,24 @@
     iget-wide v2, p0, Lcom/amap/api/location/c;->f:J
 
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_f
-    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_8
 
     .line 190
     :goto_8
-    :try_start_10
     throw v0
-    :try_end_10
-    .catch Ljava/lang/Throwable; {:try_start_10 .. :try_end_10} :catch_0
+    :try_end_f
+    .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_0
 
     .line 220
     :cond_b
-    :try_start_11
+    :try_start_10
     invoke-virtual {p0}, Lcom/amap/api/location/c;->c()V
-    :try_end_11
-    .catch Ljava/lang/Throwable; {:try_start_11 .. :try_end_11} :catch_5
+    :try_end_10
+    .catch Ljava/lang/Throwable; {:try_start_10 .. :try_end_10} :catch_2
 
     goto/16 :goto_2
 
     .line 224
-    :catch_5
+    :catch_2
     move-exception v0
 
     .line 223
@@ -1300,14 +1288,14 @@
     goto/16 :goto_2
 
     .line 176
-    :catch_6
+    :catch_3
     move-exception v0
 
     .line 198
-    :try_start_12
+    :try_start_11
     invoke-static {}, Lcom/amap/api/location/core/a;->a()I
-    :try_end_12
-    .catch Ljava/lang/Throwable; {:try_start_12 .. :try_end_12} :catch_0
+    :try_end_11
+    .catch Ljava/lang/Throwable; {:try_start_11 .. :try_end_11} :catch_0
 
     move-result v0
 
@@ -1315,7 +1303,7 @@
 
     .line 202
     :goto_9
-    :try_start_13
+    :try_start_12
     iget-boolean v0, p0, Lcom/amap/api/location/c;->c:Z
 
     if-nez v0, :cond_d
@@ -1324,67 +1312,63 @@
 
     .line 205
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_13
-    .catch Ljava/lang/Throwable; {:try_start_13 .. :try_end_13} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_13 .. :try_end_13} :catch_7
+    :try_end_12
+    .catch Ljava/lang/Throwable; {:try_start_12 .. :try_end_12} :catch_0
 
     goto/16 :goto_1
 
     .line 209
-    :catch_7
     move-exception v0
 
     goto/16 :goto_1
 
     .line 199
     :cond_c
-    :try_start_14
+    :try_start_13
     iget-object v0, p0, Lcom/amap/api/location/c;->e:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/location/core/a;->a(Landroid/content/Context;)Z
-    :try_end_14
-    .catch Ljava/lang/Throwable; {:try_start_14 .. :try_end_14} :catch_0
+    :try_end_13
+    .catch Ljava/lang/Throwable; {:try_start_13 .. :try_end_13} :catch_0
 
     goto :goto_9
 
     .line 203
     :cond_d
-    :try_start_15
+    :try_start_14
     iget-wide v0, p0, Lcom/amap/api/location/c;->f:J
 
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_15
-    .catch Ljava/lang/Throwable; {:try_start_15 .. :try_end_15} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_15 .. :try_end_15} :catch_7
+    :try_end_14
+    .catch Ljava/lang/Throwable; {:try_start_14 .. :try_end_14} :catch_0
 
     goto/16 :goto_1
 
     .line 199
     :cond_e
-    :try_start_16
+    :try_start_15
     iget-object v0, p0, Lcom/amap/api/location/c;->e:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/location/core/a;->a(Landroid/content/Context;)Z
-    :try_end_16
-    .catch Ljava/lang/Throwable; {:try_start_16 .. :try_end_16} :catch_0
+    :try_end_15
+    .catch Ljava/lang/Throwable; {:try_start_15 .. :try_end_15} :catch_0
 
     goto :goto_6
 
     .line 203
     :cond_f
-    :try_start_17
+    :try_start_16
     iget-wide v2, p0, Lcom/amap/api/location/c;->f:J
 
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_17
-    .catch Ljava/lang/Throwable; {:try_start_17 .. :try_end_17} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_17 .. :try_end_17} :catch_2
+    :try_end_16
+    .catch Ljava/lang/Throwable; {:try_start_16 .. :try_end_16} :catch_0
 
     goto/16 :goto_0
 
     .line 208
     :cond_10
-    :try_start_18
+    :try_start_17
     iget-object v2, p0, Lcom/amap/api/location/c;->h:Lcom/amap/api/location/a;
 
     iget-boolean v2, v2, Lcom/amap/api/location/a;->e:Z
@@ -1434,43 +1418,41 @@
     iget-object v0, p0, Lcom/amap/api/location/c;->e:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/location/core/a;->a(Landroid/content/Context;)Z
-    :try_end_18
-    .catch Ljava/lang/Throwable; {:try_start_18 .. :try_end_18} :catch_0
+    :try_end_17
+    .catch Ljava/lang/Throwable; {:try_start_17 .. :try_end_17} :catch_0
 
     goto/16 :goto_5
 
     .line 203
     :cond_14
-    :try_start_19
+    :try_start_18
     iget-wide v2, p0, Lcom/amap/api/location/c;->f:J
 
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_19
-    .catch Ljava/lang/Throwable; {:try_start_19 .. :try_end_19} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_19 .. :try_end_19} :catch_1
+    :try_end_18
+    .catch Ljava/lang/Throwable; {:try_start_18 .. :try_end_18} :catch_0
 
     goto/16 :goto_0
 
     .line 199
     :cond_15
-    :try_start_1a
+    :try_start_19
     iget-object v0, p0, Lcom/amap/api/location/c;->e:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/location/core/a;->a(Landroid/content/Context;)Z
-    :try_end_1a
-    .catch Ljava/lang/Throwable; {:try_start_1a .. :try_end_1a} :catch_0
+    :try_end_19
+    .catch Ljava/lang/Throwable; {:try_start_19 .. :try_end_19} :catch_0
 
     goto/16 :goto_7
 
     .line 203
     :cond_16
-    :try_start_1b
+    :try_start_1a
     iget-wide v2, p0, Lcom/amap/api/location/c;->f:J
 
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_1b
-    .catch Ljava/lang/Throwable; {:try_start_1b .. :try_end_1b} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_1b .. :try_end_1b} :catch_4
+    :try_end_1a
+    .catch Ljava/lang/Throwable; {:try_start_1a .. :try_end_1a} :catch_0
 
     goto/16 :goto_0
 
@@ -1479,10 +1461,10 @@
     move-exception v0
 
     .line 198
-    :try_start_1c
+    :try_start_1b
     invoke-static {}, Lcom/amap/api/location/core/a;->a()I
-    :try_end_1c
-    .catch Ljava/lang/Throwable; {:try_start_1c .. :try_end_1c} :catch_0
+    :try_end_1b
+    .catch Ljava/lang/Throwable; {:try_start_1b .. :try_end_1b} :catch_0
 
     move-result v1
 
@@ -1490,7 +1472,7 @@
 
     .line 202
     :goto_a
-    :try_start_1d
+    :try_start_1c
     iget-boolean v1, p0, Lcom/amap/api/location/c;->c:Z
 
     if-nez v1, :cond_a
@@ -1499,26 +1481,24 @@
 
     .line 205
     invoke-static {v2, v3}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_1d
-    .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_0
-    .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_8
+    :try_end_1c
+    .catch Ljava/lang/Throwable; {:try_start_1c .. :try_end_1c} :catch_0
 
     goto/16 :goto_8
 
     .line 209
-    :catch_8
     move-exception v0
 
     goto/16 :goto_1
 
     .line 199
     :cond_17
-    :try_start_1e
+    :try_start_1d
     iget-object v1, p0, Lcom/amap/api/location/c;->e:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/amap/api/location/core/a;->a(Landroid/content/Context;)Z
-    :try_end_1e
-    .catch Ljava/lang/Throwable; {:try_start_1e .. :try_end_1e} :catch_0
+    :try_end_1d
+    .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_0
 
     goto :goto_a
 .end method

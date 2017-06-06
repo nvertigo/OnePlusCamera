@@ -54,7 +54,6 @@
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     goto :goto_0
 

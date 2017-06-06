@@ -1403,6 +1403,8 @@
     .local v16, "hardwareLevel":I
     const/16 v54, 0x2
 
+    const/16 v16, 0x2
+
     move/from16 v0, v16
 
     move/from16 v1, v54
@@ -1613,15 +1615,11 @@
     .line 338
     sget-object v55, Lcom/oneplus/camera/CameraInfo;->PROP_HARDWARE_LEVEL:Lcom/oneplus/base/PropertyKey;
 
-    sget-object v54, Landroid/hardware/camera2/CameraCharacteristics;->INFO_SUPPORTED_HARDWARE_LEVEL:Landroid/hardware/camera2/CameraCharacteristics$Key;
+    const/4 v2, 0x2
 
-    move-object/from16 v0, v54
-
-    invoke-virtual {v7, v0}, Landroid/hardware/camera2/CameraCharacteristics;->get(Landroid/hardware/camera2/CameraCharacteristics$Key;)Ljava/lang/Object;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v54
-
-    check-cast v54, Ljava/lang/Integer;
 
     move-object/from16 v0, p0
 
